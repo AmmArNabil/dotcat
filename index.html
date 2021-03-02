@@ -10,178 +10,8 @@
     <link rel="shortcut icon" href="t_logo.png">
 
     <style type="text/css">
-    .navigation{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: #111;
-    transition: 0.2e;
-    display: flex;
-    visibility: hidden;
-    opacity: 0;
-    
-}
-.navigation.active{
-    visibility: visible;
-    opacity: 1; 
-}
-.navigation .navArea{
-    position: relative;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.navigation .navArea ul li
- {
-    list-style: none;
-}
-.navigation .navArea ul li::before
-{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #f00;  
-  z-index: -1;
-  opacity: 0;
-  transition: 0.5s;
-}
-.navigation .navArea ul li:nth-child(1)::before
-{
-    background: #905c49;
-}
-.navigation .navArea ul li:nth-child(2)::before
-{
-    background: #FAFE6B;
-}
-.navigation .navArea ul li:nth-child(3)::before
-{
-    background: #5FB2E6;
-}
-.navigation .navArea ul li:nth-child(4)::before
-{
-    background: #F84D96;
-}
-.navigation .navArea ul li:nth-child(5)::before
-{
-    background: #FF6969;
-}
-.navigation .navArea ul li:nth-child(6)::before
-{
-    background: #71F8F9;
-}
 
-.navigation .navArea ul li:hover::before
-{
-    opacity: 1;  
-}
-.navigation .navArea ul li a {
-    font-size: 3em;
-    font-weight: 600;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.5);
-
-}
-.navigation .navArea ul li:hover a{
-    color: rgba(255, 255, 255, 1);
-}
-.imgArea{
-    position: relative;
-    width: 50%;
-    height: 100vh;
-    background: #000;
-
-}
-.imgArea img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.menuToggle {
-    position: absolute;
-    top: -9px;
-    left: 14px;
-    width: 40px;
-    height: 30px;
-    background: #fff url(menu1.png);
-    z-index: 1000;
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-}
-.menuToggle.active
-{
-    background: #000 url(c.png);
-    z-index: 1000;
-    background-size: 25px;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: invert(1);
-}
-@media(max-width:768px){
-.navigation .navArea
-{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-}
-.navigation .navArea ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.navigation .navArea ul li
-{
-    color: #000;
-    margin: 5px 10px;
-    padding: 5px 10px;
-}
-.navigation .navArea ul li:hover
-{
-    background: #EFE864
-}
-.navigation .navArea ul li a{
-    color: #000;
-    font-size: 2em;
-    letter-spacing: 2px;
-}
-.imgArea
-{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background: #f00;
-    align-items: center;
-}
-.navigation .navArea ul li:hover::before
-{
-    opacity: 0;
-}
-.imgArea{
-    position: absolute;
-    width: 100%;
-    height: 100hv;
-    background: #f00;
-    opacity: 0.7;
-}
-}
-    
-    .navMain{min-height:100vh;display:flex;align-items:center;padding:4vw 0 0}@media (max-width:47.99em){.navMain .h5{font-size:calc(2.5vw + 16px)}}.navMain .h1,.navMain .h2,.navMain .h3,.navMain .h4,.navMain .h5,.navMain .h6,.navMain .heading,.navMain h1,.navMain h2,.navMain h3,.navMain h4,.navMain h5,.navMain h6{line-height:1.1!important}.navMain h4.u-medium{font-size:calc(1.07143vw + 24.57143px)}.navMain .navMain-container{width:100%;display:flex;justify-content:space-between;margin:calc(1.78571vw + 34.28571px) 0}.navMain ul{list-style-type:none}.navMain p{max-width:400px}@media (max-width:120.0525em){.navMain p{max-width:300px}}@media (max-width:100em){.navMain p{max-width:280px}}@media (max-width:84.99em){.navMain p{max-width:220px}}@media (max-width:61.9275em){.navMain p{max-width:200px}}@media (max-width:29.99em){.navMain p{max-width:200px}}@media (max-width:47.99em){.navMain{align-items:flex-start;padding-top:80px;height:auto}.navMain .navMain-container{flex-wrap:wrap}.navMain .navMain-col{flex:0 0 50%;width:50%;margin-bottom:80px}}@media (max-width:85em){.navMain-col{transform:scale(.9)}.navMain-col p{font-size:18px}}@media (max-width:61.9275em){.navMain-col{transform:none}.navMain-col p{font-size:14px}}@media (max-width:29.99em){.navMain-col{flex:0 0 40%!important;width:40%!important}}@media (max-width:22.5em){.navMain-col{flex:0 0 100%!important;width:100%!important;margin-bottom:40px!important}}
-    </style>
+    /* nav */  </style>
 
 <style type="text/css">
     .button.is-tiny,.buttons.is-tiny>.button,.checkbox.is-tiny,.content.is-tiny,.input-tag.is-tiny,.input.is-tiny,.inputGroup.is-tiny,.inputGroup.is-tiny>.button,.inputGroup.is-tiny>.input,.inputGroup.is-tiny>.input-tag,.label.is-tiny,.multiselect .multiselect__tags-tag.is-tiny,.multiselect .multiselect__tags.is-tiny,.pagination.is-tiny,.radio.is-tiny,.select.is-tiny,.switcher.is-tiny,.textarea.is-tiny{font-size:calc(.08929vw + 9.71429px)}.button.is-small,.buttons.is-small>.button,.checkbox.is-small,.content.is-small,.input-tag.is-small,.input.is-small,.inputGroup.is-small,.inputGroup.is-small>.button,.inputGroup.is-small>.input,.inputGroup.is-small>.input-tag,.label,.label.is-small,.multiselect .multiselect__tags-tag.is-small,.multiselect .multiselect__tags.is-small,.pagination.is-small,.radio.is-small,.select.is-small,.switcher.is-small,.textarea.is-small,[tooltip]:after{font-size:calc(.17857vw + 11.42857px)}.button,.button.is-normal,.buttons.is-normal>.button,.checkbox,.checkbox.is-normal,.content,.content.is-normal,.input,.input-tag,.input-tag.is-normal,.input.is-normal,.inputGroup,.inputGroup.is-normal,.inputGroup.is-normal>.button,.inputGroup.is-normal>.input,.inputGroup.is-normal>.input-tag,.label,.label.is-normal,.modal,.multiselect .multiselect__tags,.multiselect .multiselect__tags-tag,.multiselect .multiselect__tags-tag.is-normal,.multiselect .multiselect__tags.is-normal,.navbar-item,.pagination,.pagination-first,.pagination-item,.pagination-last,.pagination-next,.pagination-prev,.pagination.is-normal,.radio,.radio.is-normal,.select,.select.is-normal,.switcher,.switcher.is-normal,.table,.textarea,.textarea.is-normal{font-size:calc(.40179vw + 12.71429px)}.button.is-large,.buttons.is-large>.button,.checkbox.is-large,.content.is-large,.input-tag.is-large,.input.is-large,.inputGroup.is-large,.inputGroup.is-large>.button,.inputGroup.is-large>.input,.inputGroup.is-large>.input-tag,.label.is-large,.multiselect .multiselect__tags-tag.is-large,.multiselect .multiselect__tags.is-large,.pagination.is-large,.radio.is-large,.select.is-large,.switcher.is-large,.textarea.is-large{font-size:calc(.53571vw + 14.28571px)}.button.is-massive,.buttons.is-massive>.button,.checkbox.is-massive,.content.is-massive,.input-tag.is-massive,.input.is-massive,.inputGroup.is-massive,.inputGroup.is-massive>.button,.inputGroup.is-massive>.input,.inputGroup.is-massive>.input-tag,.label.is-massive,.multiselect .multiselect__tags-tag.is-massive,.multiselect .multiselect__tags.is-massive,.pagination.is-massive,.radio.is-massive,.select.is-massive,.switcher.is-massive,.textarea.is-massive{font-size:calc(.53571vw + 18.28571px)}.button{position:relative;display:inline-flex;align-items:center;justify-content:center;margin-bottom:10px;padding:.5em .75em;outline-width:0;outline-offset:0;border-width:calc(.04464vw + 1.85714px);border-style:solid;border-radius:0;background-clip:border-box;vertical-align:top;text-align:center;text-decoration:none;cursor:pointer;fill:#fff;stroke-width:0}.button .icon{font-size:1em;width:1em;height:1em}.button .icon:first-child:not(:last-child){margin-right:.25em}.button .icon:last-child:not(:first-child){margin-left:.25em}.button .icon:only-child{margin:0 -.25em}.button .label{margin:-.5em 0}.button:hover{text-decoration:none}.button:focus{outline-color:#eb008b}.button.is-block,.buttons.is-block>.button,.inputGroup.is-block>.button{width:100%}.button.is-rounded,.buttons.is-rounded>.button,.inputGroup.is-rounded>.button{border-width:calc(.04464vw + 1.85714px);border-radius:10em}.button,.button.is-black,.buttons.is-black>.button,.inputGroup.is-black>.button{border-color:#000;background-color:#000;color:#fff;fill:#fff;stroke-width:0}.button.is-active:not(.is-disabled):not([disabled]),.button.is-black.is-active:not(.is-disabled):not([disabled]),.button.is-black:active:not(.is-disabled):not([disabled]),.button.is-black:hover:not(.is-disabled):not([disabled]),.button:active:not(.is-disabled):not([disabled]),.button:hover:not(.is-disabled):not([disabled]),.buttons.is-black>.button.is-active:not(.is-disabled):not([disabled]),.buttons.is-black>.button:active:not(.is-disabled):not([disabled]),.buttons.is-black>.button:hover:not(.is-disabled):not([disabled]),.inputGroup.is-black>.button.is-active:not(.is-disabled):not([disabled]),.inputGroup.is-black>.button:active:not(.is-disabled):not([disabled]),.inputGroup.is-black>.button:hover:not(.is-disabled):not([disabled]){background-color:transparent;color:#000;fill:#000;stroke-width:0}.button.is-inverse,.buttons.is-inverse>.button,.inputGroup.is-inverse>.button{border-color:#000;background-color:transparent;color:#000;fill:#000;stroke-width:0}.button.is-inverse.is-active:not(.is-disabled):not([disabled]),.button.is-inverse:active:not(.is-disabled):not([disabled]),.button.is-inverse:hover:not(.is-disabled):not([disabled]),.buttons.is-inverse>.button.is-active:not(.is-disabled):not([disabled]),.buttons.is-inverse>.button:active:not(.is-disabled):not([disabled]),.buttons.is-inverse>.button:hover:not(.is-disabled):not([disabled]),.inputGroup.is-inverse>.button.is-active:not(.is-disabled):not([disabled]),.inputGroup.is-inverse>.button:active:not(.is-disabled):not([disabled]),.inputGroup.is-inverse>.button:hover:not(.is-disabled):not([disabled]){background-color:#000;color:#fff;fill:#fff;stroke-width:0}.button.is-white,.buttons.is-white>.button,.inputGroup.is-white>.button{border-color:#fff;background-color:#fff;color:#000;fill:#000;stroke-width:0}.button.is-white.is-active:not(.is-disabled):not([disabled]),.button.is-white:active:not(.is-disabled):not([disabled]),.button.is-white:hover:not(.is-disabled):not([disabled]),.buttons.is-white>.button.is-active:not(.is-disabled):not([disabled]),.buttons.is-white>.button:active:not(.is-disabled):not([disabled]),.buttons.is-white>.button:hover:not(.is-disabled):not([disabled]),.inputGroup.is-white>.button.is-active:not(.is-disabled):not([disabled]),.inputGroup.is-white>.button:active:not(.is-disabled):not([disabled]),.inputGroup.is-white>.button:hover:not(.is-disabled):not([disabled]){background-color:transparent;color:#fff;fill:#fff;stroke-width:0}.button.is-white.is-inverse,.buttons.is-white.is-inverse>.button,.inputGroup.is-white.is-inverse>.button{border-color:#fff;background-color:transparent;color:#fff;fill:#fff;stroke-width:0}.button.is-white.is-inverse.is-active:not(.is-disabled):not([disabled]),.button.is-white.is-inverse:active:not(.is-disabled):not([disabled]),.button.is-white.is-inverse:hover:not(.is-disabled):not([disabled]),.buttons.is-white.is-inverse>.button.is-active:not(.is-disabled):not([disabled]),.buttons.is-white.is-inverse>.button:active:not(.is-disabled):not([disabled]),.buttons.is-white.is-inverse>.button:hover:not(.is-disabled):not([disabled]),.inputGroup.is-white.is-inverse>.button.is-active:not(.is-disabled):not([disabled]),.inputGroup.is-white.is-inverse>.button:active:not(.is-disabled):not([disabled]),.inputGroup.is-white.is-inverse>.button:hover:not(.is-disabled):not([disabled]){background-color:#fff;color:#000;fill:#000;stroke-width:0}.button.is-primary,.buttons.is-primary>.button,.inputGroup.is-primary>.button{border-color:#1a3aff;background-color:#1a3aff;color:#fff;fill:#fff;stroke-width:0}.button.is-primary.is-active:not(.is-disabled):not([disabled]),.button.is-primary:active:not(.is-disabled):not([disabled]),.button.is-primary:hover:not(.is-disabled):not([disabled]),.buttons.is-primary>.button.is-active:not(.is-disabled):not([disabled]),.buttons.is-primary>.button:active:not(.is-disabled):not([disabled]),.buttons.is-primary>.button:hover:not(.is-disabled):not([disabled]),.inputGroup.is-primary>.button.is-active:not(.is-disabled):not([disabled]),.inputGroup.is-primary>.button:active:not(.is-disabled):not([disabled]),.inputGroup.is-primary>.button:hover:not(.is-disabled):not([disabled]){background-color:transparent;color:#1a3aff;fill:#1a3aff;stroke-width:0}.button.is-primary.is-inverse,.buttons.is-primary.is-inverse>.button,.inputGroup.is-primary.is-inverse>.button{border-color:#1a3aff;background-color:transparent;color:#1a3aff;fill:#1a3aff;stroke-width:0}.button.is-primary.is-inverse.is-active:not(.is-disabled):not([disabled]),.button.is-primary.is-inverse:active:not(.is-disabled):not([disabled]),.button.is-primary.is-inverse:hover:not(.is-disabled):not([disabled]),.buttons.is-primary.is-inverse>.button.is-active:not(.is-disabled):not([disabled]),.buttons.is-primary.is-inverse>.button:active:not(.is-disabled):not([disabled]),.buttons.is-primary.is-inverse>.button:hover:not(.is-disabled):not([disabled]),.inputGroup.is-primary.is-inverse>.button.is-active:not(.is-disabled):not([disabled]),.inputGroup.is-primary.is-inverse>.button:active:not(.is-disabled):not([disabled]),.inputGroup.is-primary.is-inverse>.button:hover:not(.is-disabled):not([disabled]){background-color:#1a3aff;color:#fff;fill:#fff;stroke-width:0}.button.is-secondary,.buttons.is-secondary>.button,.inputGroup.is-secondary>.button{border-color:#eb008b;background-color:#eb008b;color:#fff;fill:#fff;stroke-width:0}.button.is-secondary.is-active:not(.is-disabled):not([disabled]),.button.is-secondary:active:not(.is-disabled):not([disabled]),.button.is-secondary:hover:not(.is-disabled):not([disabled]),.buttons.is-secondary>.button.is-active:not(.is-disabled):not([disabled]),.buttons.is-secondary>.button:active:not(.is-disabled):not([disabled]),.buttons.is-secondary>.button:hover:not(.is-disabled):not([disabled]),.inputGroup.is-secondary>.button.is-active:not(.is-disabled):not([disabled]),.inputGroup.is-secondary>.button:active:not(.is-disabled):not([disabled]),.inputGroup.is-secondary>.button:hover:not(.is-disabled):not([disabled]){background-color:transparent;color:#eb008b;fill:#eb008b;stroke-width:0}.button.is-secondary.is-inverse,.buttons.is-secondary.is-inverse>.button,.inputGroup.is-secondary.is-inverse>.button{border-color:#eb008b;background-color:transparent;color:#eb008b;fill:#eb008b;stroke-width:0}
@@ -228,13 +58,22 @@
         .u-list-2col{display:flex;flex-wrap:wrap}.u-list-2col li{flex:0 0 45%;min-width:45%;margin-bottom:calc(.44643vw + 8.57143px)}.u-list-2col li:nth-child(odd){margin-right:10%}.u-clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}.u-active a.is-active,.u-cl-primary{color:#1a3aff}.u-cl-secondary{color:#eb008b}.u-cl-info{color:#1de9cf}.u-cl-success{color:#5fca16}.u-cl-warning{color:#ff9600}.u-cl-danger{color:#f42828}.u-cl-black{color:#000}.u-cl-white{color:#fff}.u-cl-purple{color:#a324ea}.u-flex-center{display:flex;justify-content:space-between;align-items:center}@media (max-width:29.99em){.u-flex-center{flex-wrap:wrap}}.u-img-max{max-width:80%}@media (max-width:29.99em){.u-img-max{max-width:100%}}@media (max-width:84.99em){.u-hide-widescreen{display:none}}@media (min-width:85em){.u-show-widescreen{display:none}}.u-section-full{margin-left:-12vw;margin-right:-12vw}@media (max-width:47.99em){.u-section-full{margin-left:-8vw;margin-right:-8vw}}.u-section-padding{padding-right:12vw;padding-left:12vw}@media (max-width:47.99em){.u-section-padding{padding-right:8vw;padding-left:8vw}}.u-ltr{direction:ltr;display:inline-block}.app.is-dark{background:#000;color:#fff}.app.is-dark .overlay{color:#000}.app.is-dark .overlay .b-button{border-color:#000;color:#000}.app.is-dark .overlay .b-button:hover{border-color:#1a3aff;color:#fff}.app.is-dark .overlay .input,.app.is-dark .overlay .multiselect .multiselect__tags{border-color:#000;color:#000}.app.is-dark .overlay.overlay-nav{color:#fff}.app.is-dark .b-button{border-color:#fff;color:#fff}.app.is-dark .b-button:hover{border-color:#1a3aff}.app.is-dark .input,.app.is-dark .multiselect .multiselect__tags{border-color:#fff;color:#fff;background:none}.app.is-dark .button-link.is-black{color:#fff}.app.is-dark .input.has-error,.app.is-dark .multiselect .multiselect__tags.has-error{border-color:#ff9600}.app.is-dark .mainSearch-input{color:#000}.app.is-dark .checkbox.is-large input,.app.is-dark .radio.is-large input{border-color:#fff}.app.is-dark .multiselect__input,.app.is-dark .multiselect__single{background:none}.app.is-dark .multiselect .multiselect__content-wrapper{border-color:#fff}.app.is-dark .multiselect .multiselect__tag{background:#fff;color:#000}.app.is-dark .multiselect .multiselect__tag-icon:after{color:#000}.app.is-dark .multiselect .multiselect__tag-icon:hover{background:#fff}.app.is-dark .multiselect .multiselect__select:before{border-color:#fff transparent transparent}.app.is-dark .order-navigator-dot{background-color:#fff}.app.is-dark .checkbox-input,.app.is-dark .radio-input{border-color:#fff}.app.is-dark .vue-dropzone.dropzone{color:#fff;background:none;border-color:#fff}.app.is-dark .vue-dropzone.dropzone:hover{background:none}.app.is-dark .table{background:none}.app.is-dark .table td,.app.is-dark .table th{border-color:#fff}.app.is-dark .multiselect .multiselect__single{color:#fff}.app.is-dark .footer{border-color:#fff}.app.is-dark .u-divider{background:#fff}.app.is-dark .u-divider.is-dark{background:#000}.app.is-dark .book-sticky-nav ul a:before{background:#fff}.app.is-dark .book-navAll span{border-color:#fff}.app.is-dark .button-link.is-black:after{background:#fff}.app.is-dark .adminNav-icon:after,.app.is-dark .adminNav-icon:before{background:#fff}.app.is-dark .adminNav li>ul>li a:before{background:#fff}.app.is-dark .tabs>ul>li:after{background:#fff}.app.is-dark .input::-webkit-input-placeholder{color:#fff}.app.is-dark .input:-moz-placeholder,.app.is-dark .input::-moz-placeholder{color:#fff}.app.is-dark .input:-ms-input-placeholder{color:#fff}.app.is-dark .header.is-scroll{background:#000}.app.is-dark .cardBox{border-color:#fff}.app.is-dark .cardBox:hover{border-color:#1a3aff}body .app{transition:background .3s ease-in-out}body .app.is-business .header{background:#f42828;color:#fff}body .app.is-business .header a:hover{color:#000}body .app.is-business a:hover{color:#f42828}body .app.is-business .button-link{color:#f42828;background-image:linear-gradient(90deg,#f42828 0,#f42828)}body .app.is-business .button-link:hover{color:#1a3aff;background-image:linear-gradient(90deg,#1a3aff 0,#1a3aff)}body .app.is-design .header{background:#eb008b;color:#fff}body .app.is-design .header a:hover{color:#000}body .app.is-design a:hover{color:#eb008b}body .app.is-design .button-link{color:#eb008b;background-image:linear-gradient(90deg,#eb008b 0,#eb008b)}body .app.is-design .button-link:hover{color:#1a3aff;background-image:linear-gradient(90deg,#1a3aff 0,#1a3aff)}body .app.is-development .header{background:#ff6f00;color:#fff}body .app.is-development .header a:hover{color:#000}body .app.is-development a:hover{color:#ff6f00}body .app.is-development .button-link{color:#ff6f00;background-image:linear-gradient(90deg,#ff6f00 0,#ff6f00)}body .app.is-development .button-link:hover{color:#1a3aff;background-image:linear-gradient(90deg,#1a3aff 0,#1a3aff)}body .app.is-technology .header{background:#5fca16;color:#fff}body .app.is-technology .header a:hover{color:#000}body .app.is-technology a:hover{color:#5fca16}body .app.is-technology .button-link{color:#5fca16;background-image:linear-gradient(90deg,#5fca16 0,#5fca16)}body .app.is-technology .button-link:hover{color:#1a3aff;background-image:linear-gradient(90deg,#1a3aff 0,#1a3aff)}body .app.is-labs,body .app.is-labs .header.is-scroll{background:#ff0}body .app.is-learn,body .app.is-learn .header.is-scroll{background:#1a3aff}body .app.is-learn a:not(.button-link):hover{color:#eb008b}body .app.is-learn .button-link{color:#ff0;background-image:linear-gradient(90deg,#ff0 0,#ff0)}body .app.is-learn .button-link:hover{color:#eb008b;background-image:linear-gradient(90deg,#eb008b 0,#eb008b)}body .app.is-learn .cardBox:hover{border-color:#ff0}.button.is-code{position:absolute;right:calc(.35714vw + 6.85714px);top:calc(.35714vw + 6.85714px);margin:0}.baseMain .input{height:auto;padding:.5em .75em}.app.is-base-home .app-body>.grid>.column:first-child{display:none}.app.is-base-home .app-body>.grid>.column:last-child{flex:0 0 100%;min-width:100%}
         </style>
 
-<style type="text/css">.cardBox{border:calc(.17857vw + 3.42857px) solid #000;padding:calc(2.67857vw + 11.42857px);height:100%;position:relative}.cardBox:hover{border-color:#1a3aff}.cardBox-url{position:absolute;left:0;top:0;right:0;bottom:0}.cardBox-auto{height:auto}
+<style type="text/css">
+/* .cardBox{border:calc(.17857vw + 3.42857px) solid #000;padding:calc(2.67857vw + 11.42857px);height:100%;position:relative}.cardBox:hover{border-color:#1a3aff}.cardBox-url{position:absolute;left:0;top:0;right:0;bottom:0}.cardBox-auto{height:auto}
+ */
 </style>
-<style type="text/css">.section{position:relative}.section.is-reversed .grid{flex-direction:row-reverse}.section.is-reversed .section-content{padding-left:0;padding-right:calc(4.46429vw + 5.71429px)}.section-url{position:absolute;top:0;right:0;left:0;bottom:0;z-index:2}.section-content{padding-left:calc(4.46429vw + 5.71429px)}.section-content h6{font-weight:700}@media (max-width:61.9275em){.section-content{padding:calc(1.78571vw + 34.28571px) 0 0!important}}.section-img{width:100%;height:auto;position:relative}.section-img img,.section-img picture{width:100%;height:auto;display:block}.section .AppImg{transition:transform .5s ease-in-out}.section .AppImg>img,.section .AppImg>picture{transition:transform .5s ease-in-out}.section:hover .AppImg{transform:scale(.97)}.section:hover .AppImg-main{transform:scale(1.15)}
+<style type="text/css">
+
+/* .section{position:relative}.section.is-reversed .grid{flex-direction:row-reverse}.section.is-reversed .section-content{padding-left:0;padding-right:calc(4.46429vw + 5.71429px)}.section-url{position:absolute;top:0;right:0;left:0;bottom:0;z-index:2}.section-content{padding-left:calc(4.46429vw + 5.71429px)}.section-content h6{font-weight:700}@media (max-width:61.9275em){.section-content{padding:calc(1.78571vw + 34.28571px) 0 0!important}}.section-img{width:100%;height:auto;position:relative}.section-img img,.section-img picture{width:100%;height:auto;display:block}.section .AppImg{transition:transform .5s ease-in-out}.section .AppImg>img,.section .AppImg>picture{transition:transform .5s ease-in-out}.section:hover .AppImg{transform:scale(.97)}.section:hover .AppImg-main{transform:scale(1.15)}
+ */
+
 </style>
 
-    <style type="text/css">.overlay-nav{color:#fff!important;background:#000}@media (max-width:61.9275em){.overlay-nav .container{padding:0 20px}}
-    </style>
+    <style type="text/css">
+
+    /* .overlay-nav{color:#fff!important;background:#000}@media (max-width:61.9275em){.overlay-nav .container{padding:0 20px}}
+    */
+   </style>
 
     
     <style data-vue-ssr-id="2584b1b1:0 44f70bca:0 7869c64a:0 3191d5ad:0 2b77324e:0 03d9d434:0 7c332770:0 07dd9ca4:0 2447fd38:0 7522c5a8:0 fd7d1728:0 254e360c:0">
@@ -4884,7 +4723,11 @@
             }
         }
     </style>
-<style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}
+<style type="text/css">
+
+/* iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}
+ */
+
 </style>
 
 </head>
@@ -4897,7 +4740,7 @@
                 </div>
                 <header id="header" class="header is-scroll" style="transform: translate3d(0px, -100%, 0px);">
                     <div class="header-logo"><div class="appLogo" >
-                        <a title="بيانات">
+                        <a title="">
                             <div class="appLogo-icon">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon icon-logoIcon appLogo-icon-main" viewBox="0 0 327.3 276.1" id="icon-logoIcon">
                                     <path d="M189.2 51.1H271V10.2h-81.8V0H30.7v40.9h158.5zM189.2 107.3H271V66.4h-81.8V56.2H15.3v40.9h173.9zM286.3 66.4h40.9v40.9h-40.9zM271 163.6v-40.9h-81.8v-10.2H30.7v40.9h158.5v10.2zM189.2 178.9v-10.2H0v40.9h189.2v10.2h138.1v-40.9zM189.2 225H30.7v40.9h158.5v10.2H271v-40.9h-81.8z"></path></svg><svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon icon-arrowR2" viewBox="0 0 24 24" id="icon-arrowR2">
@@ -4928,31 +4771,10 @@
 </li>
                 </ul>
             </header>
-            <!---->
-            <!---->
-            <!---->
-            <!---->
+        
         </div>
 
     <div class="theims">
-
-        <!-- Header -->
-        <!-- <header id="header">
-   <a href="#" class="logo"><img src="t_logo.png"></a>
-            <ul>
-
-                <li><a href="#home" onclick="toggle()">توصل</a></li>
-                <li><a href="#about" onclick="toggle()">حول</a></li>
-                <li><a href="#services" onclick="toggle()">اعمالنا</a></li>
-                <li><a href="#portfolio" onclick="toggle()"></a></li>
-                <li><a href="#team" onclick="toggle()"></a></li>
-                <li><a href="#contact" onclick="toggle()"></a></li>
-
-            </ul>
-         
-
-            <div class="toggle" onclick="toggle()"></div>
-        </header> -->
     
      
         <header id="header" class="header" style="transform: translate3d(0px, 0px, 0px);">
@@ -4974,15 +4796,7 @@
                         <ul class="header-menu" onclick="toggle()">
                                             <li>
                                                     <div class="menuToggle" onclick="ToggleMenu();" >
-                                                            <!-- <a href="#0" title="القائمة">
-                                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon icon-menu" viewBox="0 0 24 24" id="icon-menu">
-                                                                        <path d="M0 0h24v24H0z" fill="none">
-                                                                            </path>
-                                                                            <path d="M9 9.96h13v4H9zM2 2h20v4H2zM6 18h16v4H6z">
-                                                                                </path>
-                                                                            </svg>
-                                                                            <span>القائمة</span>
-                                                                        </a> -->
+                                                    
                                                         </div>
                                                         <div class="navigation">
                                                                 <div class="navArea">
@@ -4997,7 +4811,7 @@
                                                                             <a href="#" onclick="ToggleMenu();" >خدماتنا</a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="#" onclick="ToggleMenu();">أعمالنا</a>
+                                                                            <a href="work.html" onclick="ToggleMenu();">أعمالنا</a>
                                                                         </li>      <li>
                                                                             <a href="#"  onclick="ToggleMenu();">توصل</a>
                                                                         </li>  
@@ -5011,7 +4825,7 @@
                                                                    
                                                                 </div>
                                                                <div class="imgArea">
-<!--                                                                         <img src="1.png" alt="" id="slider"> -->
+                                                                        <!-- <img src="1.png" alt="" id="slider"> -->
                                                                     </div>
                                                             </div>
                                                     </li>
@@ -5232,7 +5046,8 @@
                 <div class="column is-desktop-1">
                     <!---->
                 </div>
-                <div class="column is-desktop-4"><a href="#" class="button-link is-massive " title="شاهد جميع أعمالنا.">شاهد جميع <br>أعمالنا.</a></div>
+                <div class="column is-desktop-4"><a href="work.html" class="button-link is-massive " 
+                    title="شاهد جميع أعمالنا.">شاهد جميع <br>أعمالنا.</a></div>
             </div>
         </section>
         <section class="Ventures u-mh-mi">
@@ -5364,9 +5179,9 @@
 
 </div>
 <script>
-    function changImage(anything){
-document.getElementById('slider').src=anything;
-    }
+//     function changImage(anything){
+// document.getElementById('slider').src=anything;
+//     }
     function ToggleMenu(){
         const menuToggle=document.querySelector('.menuToggle');
         const navigation=document.querySelector('.navigation');
